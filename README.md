@@ -1,5 +1,7 @@
 # Astro Icon Bug - Automatically optimized sprite causes identical icons to disappear when main instance is hidden
 
+[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/KulcsRX21/astro-icon-sprite)
+
 ## Description
 
 Due to automatic sprite optimization, the mdi:heart icon — used both in my navbar (static) and in a dynamic list within a client island (client:only="vue") rendered as a component inside an Astro slot under the navbar (Astro layout structure) — disappears from the navbar when the dynamic list is empty. Somehow the icon in the dynamic list is the main instance with a symbol, so the navbar icon references that. When the list is empty, there is no icon instance to reference, causing the navbar icon to disappear.
