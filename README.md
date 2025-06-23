@@ -1,4 +1,4 @@
-# Astro Icon - Automatically optimized sprite causes identical icons to disappear when main instance is hidden
+# Astro Icon Bug - Automatically optimized sprite causes identical icons to disappear when main instance is hidden
 
 ## Description
 
